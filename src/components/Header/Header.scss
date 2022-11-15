@@ -6,4 +6,18 @@
     justify-content: space-between;
     padding: 15px;
     background-color: white;
+
+    &__title{
+        font-size: 1rem;
+        @include tablet{
+            font-size: 1.5rem;
+        }
+    }
+
+    &__menu{
+        font-size: 1rem;
+        @include tablet{
+            font-size: 1.5rem;
+        }
+    }
 }
