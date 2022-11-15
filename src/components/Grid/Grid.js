@@ -209,7 +209,7 @@ export default function Grid({participants}) {
                         <div className="grid__row">
                             {row.map((cell)=>{
                                 return(
-                                    <div className="grid__cell">{cell}</div>
+                                    <div className={`grid__cell ${cell.length>0? "":"grid__cell--disabled"}`}>{cell}</div>
                                 )
                             })
                             }

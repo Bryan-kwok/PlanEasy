@@ -132,4 +132,17 @@
         &--box{
         }
     }
+
+    &__availability{
+        &--label{
+            @include basicLabel;
+            @include tablet{
+                margin-bottom: 3rem;
+            }
+        }
+    }
+}
+
+.rmdp-disabled{
+    background-color: $seperatorColor;
 }

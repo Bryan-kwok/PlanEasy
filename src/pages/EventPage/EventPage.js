@@ -115,6 +115,7 @@ export default function EventPage({date,eventName,organizerName,locationName,loc
                 </div>
             </div>
         </div>
+        <h2 className="eventpage__availability--label">A V A I L A B I L I T Y</h2>
         <Grid
             participants={participants}
         />

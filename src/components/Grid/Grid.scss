@@ -51,11 +51,15 @@
     }
     &__cell{
         font-size: 0.8rem;
-        min-height: 3.75rem;
-        min-width: 5.625rem;
+        height: 3.75rem;
+        width: 5.625rem;
         border: .0625rem black solid;
         display: flex;
         justify-content: center;
         align-items: center;
+
+        &--disabled{
+            background-color: $seperatorColor;
+        }
     }
 }

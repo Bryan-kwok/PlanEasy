@@ -6,11 +6,123 @@
         @include mainContent;
     }
 
+    &__entry{
+        margin-top: 15vh;
+        @include tablet{
+            margin-top: 30vh;
+        }
+        margin-bottom: 10vh;
+    }
+
+    &__instructions{
+        width: 100%;
+        align-items: flex-start;
+        text-align: left;
+
+        &--label{
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            color: black;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px $seperatorColor solid;
+        }
+
+        &--copy{
+            margin-bottom: 1rem;
+            color: $subtextColor;
+            @include tablet{
+                font-size: 1.5rem;
+            }
+        }
+
+        &--1{
+            @include landingImageMargins;
+        }
+
+        &--image1{
+            height: 350px;
+            border: 1px $borderColor solid;
+            border-radius: 8px;
+            box-shadow: 1px 1px 4px grey;
+            background-image: linear-gradient(rgba(0,0,0,0.5) 0%,rgba(255,255,255,0.1) 70% ,rgba(255,255,255,0.1) 95% ,rgba(0,0,0,0.5) 100%),url(../../assets/images/Instruction1.PNG);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            @include tablet{
+                background-size: contain;
+                height: 400px;
+                width: 500px
+            }
+        }
+
+        &--2{
+            @include landingImageMargins;
+        }
+
+        &--image2{
+            height: 500px;
+            border: 1px $borderColor solid;
+            border-radius: 8px;
+            box-shadow: 1px 1px 4px grey;
+            background-image: url(../../assets/images/Instruction2.PNG);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            @include tablet{
+                background-size:contain;
+                height: 600px;
+                width: 500px
+            }
+        }
+
+        &--3{
+            @include landingImageMargins;
+        }
+
+        &--image3{
+            height: 100px;
+            border: 1px $borderColor solid;
+            border-radius: 8px;
+            box-shadow: 1px 1px 4px grey;
+            background-image: url(../../assets/images/Instruction3.PNG);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            @include tablet{
+                background-size:contain;
+                height: 300px;
+                width: 800px
+            }
+        }
+
+        &--4{
+            @include landingImageMargins;
+        }
+
+        &--image4{
+            height: 200px;
+            border: 1px $borderColor solid;
+            border-radius: 8px;
+            box-shadow: 1px 1px 4px grey;
+            background-image: url(../../assets/images/Instruction4.PNG);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            @include tablet{
+                background-size:contain;
+                height: 400px;
+                width: 700px
+            }
+        }
+    }
+
     &__title{
         font-size: 3rem;
-        margin-bottom: 2rem;
-        margin-top: 30vh;
+        margin-bottom: 2rem;  
         font-weight: 700;
+        @include tablet{
+            font-size: 4rem;
+        }
     }
 
     &__copy{
