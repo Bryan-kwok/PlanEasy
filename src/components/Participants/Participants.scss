@@ -1,0 +1,26 @@
+@use  "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.participants{
+
+    &__container{
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        margin-bottom: 2rem;
+    }
+    &__container::-webkit-scrollbar{
+        height: 0.15rem;
+        width: 0rem;
+    }
+    &__container::-webkit-scrollbar-thumb{
+        background-color: darkgrey;
+    }
+    &__name{
+        min-width: 60px;
+    }
+    &__box{
+        min-width: 150px;
+        margin-right: 2rem;
+    }
+}

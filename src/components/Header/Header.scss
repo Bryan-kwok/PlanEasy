@@ -1,0 +1,9 @@
+@use  "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: white;
+}

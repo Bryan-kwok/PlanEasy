@@ -1,0 +1,27 @@
+@use "../../styles/partials/mixins" as *;
+@use  "../../styles/partials/variables" as *;
+
+.landing{
+    &__container{
+        @include mainContent;
+    }
+
+    &__title{
+        font-size: 3rem;
+        margin-bottom: 2rem;
+        margin-top: 30vh;
+        font-weight: 700;
+    }
+
+    &__copy{
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+        color: $subtextColor;
+    }
+
+    &__button{
+        min-height: 8vh;
+        min-width: 50vw;
+        @include basicButton
+    }
+}

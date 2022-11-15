@@ -1,0 +1,137 @@
+@use "../../styles/partials/mixins" as *;
+@use  "../../styles/partials/variables" as *;
+
+.eventpage{
+    &__container{
+        background-color: white;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        @include tablet{
+            padding: 5rem 200px;
+        }
+    }
+
+    &__hero{
+        &--box{
+            display: flex;
+            justify-content: center;
+        }
+        &--image{
+            min-width: 200px;
+            max-width: 400px;
+            @include tablet{
+                min-width: 500px;
+            }
+        }
+    }
+    &__heroinfo{
+        @include tablet{
+            display: flex;
+        }
+        
+    }
+
+    &__peopledisplay{
+        margin-bottom: 2rem;
+        border-top: 2px $seperatorColor solid;
+        border-bottom: 2px $seperatorColor solid;
+        padding: 1rem 0;
+        @include tablet{
+            margin-top: 2.5rem;
+            display: flex;
+        }
+    }
+
+    &__infosection{
+        @include tablet{
+            margin-left: 2rem;
+        }
+    }
+
+    &__title{
+        font-size: 3rem;
+        margin: 2rem 0;
+    }
+
+    &__organizer{
+        margin-bottom: 2rem;
+        &--label{
+            @include basicLabel
+        }
+    }
+
+    &__location{
+        margin-bottom: 2rem;
+        &--label{
+            @include basicLabel
+        }
+        &--name{
+            margin-bottom: 0.25rem;
+        }
+        &--address{
+            
+        }
+    }
+
+    &__datetime{
+        margin-bottom: 2rem;
+        &--label{
+            @include basicLabel
+        }
+    }
+
+    &__additional{
+        margin-bottom: 2rem;
+        @include tablet{
+            width: 320px;
+            margin-right: 5rem;
+            margin-bottom: 0;
+        }
+        
+        &--label{
+            @include basicLabel
+        }
+    }
+
+    &__form{
+        display: flex;
+        flex-direction: column;
+        
+
+        &--button{
+            font-size: 3rem;
+            width: 100px;
+            height: 75px;
+            border: none;
+        }
+
+        &--label{
+            @include basicLabel-lite
+        }
+        &--name{
+            margin-bottom: 2rem;
+        }
+        &--time{
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__calendar{
+        margin-bottom: 2rem;
+    }
+
+    &__participant{
+        &--label{
+            @include basicLabel;
+            @include tablet{
+                margin-bottom: 3rem;
+            }
+        }
+        &--box{
+            // margin-bottom: 2rem;
+            // border-bottom: 2px $seperatorColor solid;
+        }
+    }
+}

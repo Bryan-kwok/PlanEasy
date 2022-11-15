@@ -1,0 +1,55 @@
+@use "../../styles/partials/mixins" as *;
+@use  "../../styles/partials/variables" as *;
+
+.createpage{
+
+    &__container{
+        background-color: white;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        @include tablet{
+            width: 50vw;
+        }
+    }
+
+    &__details{
+        border-bottom: 2px solid $seperatorColor;
+        margin-bottom: 2rem;
+    }
+
+    &__label{
+        &--title{
+            @include basicLabel
+        }
+
+        &--location{
+            @include basicLabel
+        }
+
+        &--address{
+            @include basicLabel
+        }
+    }
+
+    &__input{
+        &--title{
+            @include basicTextArea
+        }
+
+        &--location{
+            @include basicTextArea
+        }
+
+        &--address{
+            @include basicTextArea
+        }
+    }
+
+    &__button{
+        width: 150px;
+        height: 2rem;
+        margin-left: 35%;
+        @include basicButton
+    }
+}

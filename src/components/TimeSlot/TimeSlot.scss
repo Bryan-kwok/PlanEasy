@@ -1,0 +1,33 @@
+@use  "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.timeslot{
+    &__container{
+        display: flex;
+        flex-direction: column;
+    }
+    &__date{
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+
+    &__selection{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 1rem;
+    }
+
+    &__label{
+        margin-right: 0.5rem;
+    }
+
+    &__to{
+        margin-left: 1rem;
+    }
+    &__warning{
+        color: red;
+        &-none{
+            display: none;
+        }
+    }
+}

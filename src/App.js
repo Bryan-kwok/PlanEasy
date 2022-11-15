@@ -1,23 +1,50 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.scss"
+import { BrowserRouter, Routes, Route} from "react-router-dom";
+import { useState } from "react";
+import Header from "./components/Header/Header";
+import LandingPage from "./pages/LandingPage/LandingPage";
+import ErrorPage from "./pages/ErrorPage/ErrorPage";
+import CreatePage from "./pages/CreatePage/CreatePage";
+import EventPage from "./pages/EventPage/EventPage";
 
 function App() {
+  let [date, setDate] = useState(new Date());
+  let [eventName, setEventName] = useState("Frank's Cookoff");
+  let [organizerName, setOrganizerName] = useState("Frank Ocean");
+  let [locationName, setLocationName] = useState("Trinity Bellwoods Park");
+  let [locationAddress, setLocationAddress] = useState("rinity Bellwoods Park (790 Queen St W)");
+
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <Header/>
+        <div className="Page">
+          <Routes>
+              <Route path="/" exact element={<LandingPage/>} />
+              <Route path="/create" element={<CreatePage 
+              date={date} 
+              setDate={setDate}
+              eventName={eventName}
+              setEventName={setEventName}
+              organizerName={organizerName}
+              setOrganizerName={setOrganizerName}
+              locationName={locationName}
+              setLocationName={setLocationName}
+              locationAddress={locationAddress}
+              setLocationAddress={setLocationAddress}  
+              />} />
+              <Route path="/event" element={<EventPage 
+              date={date}
+              eventName={eventName}
+              organizerName={organizerName}
+              locationName={locationName}
+              locationAddress={locationAddress}
+              />}></Route>
+              <Route path="*" element={<ErrorPage/>} />
+          </Routes>
+        </div>
+      </BrowserRouter>
     </div>
   );
 }
