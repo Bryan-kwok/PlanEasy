@@ -33,7 +33,6 @@ export default function EventPage({date,eventName,organizerName,locationName,loc
     }
 
     useEffect(()=>{
-        console.log(participants)
     },[participants])
 
   return (
@@ -95,12 +94,8 @@ export default function EventPage({date,eventName,organizerName,locationName,loc
                     ):(
                         <div></div>
                     )}
-                    
-            
                     <button className="eventpage__form--button">+</button>
                 </form>
-            
-            
             </div>
             <div className="eventpage__participant--group">
                 <h2 className="eventpage__participant--label">P A R T I C I P A N T &nbsp; O V E R V I E W</h2>

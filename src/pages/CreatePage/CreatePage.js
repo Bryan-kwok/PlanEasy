@@ -41,13 +41,10 @@ export default function CreatePage({date,setDate,eventName,setEventName,organize
             </div>
             <textarea className="createpage__input--address" placeholder="Ex. Trinity Bellwoods Park (790 Queen St W)" defaultValue={locationAddress} onChange={handleLocationAddress}></textarea>
         </section>
-
         <Calender date={date} setDate={setDate} />
         <Link to="/event">
             <button className="createpage__button">Next</button>
         </Link>
-
-        
     </div>
   )
 }

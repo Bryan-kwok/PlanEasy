@@ -50,14 +50,12 @@ export default function Grid({participants}) {
     }
 
     const handleTimeArray = ()=>{
-        let arr =[];
-        
+        let arr =[]; 
         for(let i =Number(minTime); i<=Number(maxTime); i++){
             arr.push(standardTimeConversion(i))
         }
         arr.unshift("")
         setTimeArray(arr)
-
     }
 
     //functions that find the maximum date, minimum date and populate all dates in between
@@ -115,14 +113,12 @@ export default function Grid({participants}) {
         if(maxDate&&minDate){
             let index = Number(getIndexbyWeek(weeks,minDate.split(",")[0]))
             let count = 0
-            // console.log(getWeekbyIndex(weeks,13))
             for(let i=minDate.split(",")[1]; i<=maxDate.split(",")[1]; i++){
                 arr.push(getWeekbyIndex(weeks,index+count)+" "+i)
                 count++
             }
             setDateArray(arr)
         }
-
     }
 
     //functions that compares user selected date and time, constructs array of grids with filled in info about them
@@ -134,8 +130,7 @@ export default function Grid({participants}) {
             for(let i=0;i<dateArray.length;i++){
                 grids.push(new Array(timeArray.length-1).fill(""))
             }
-    
-            console.log("This is grids"+ grids)
+
             for(let i=0; i<Object.values(participants).length;i++){
                 for(let y=0;y<Object.values(participants[i]).length-1;y++){
                     let day = participants[i][y].day.split(" ")[0] +" "+ participants[i][y].day.split(" ")[1]
@@ -161,23 +156,15 @@ export default function Grid({participants}) {
             findMaxDate();
             findMinDate();
         }
-
-        
     },[participants])
 
 
     useEffect(()=>{
-        // console.log("This is max date "+maxDate)
-        // console.log("this is min date "+minDate)
-        // console.log("This is max time "+maxTime)
-        // console.log("this is min time "+minTime)
         handleTimeArray();
         handleDateArray();
     },[maxTime,minTime,maxDate,minDate,participants])
 
     useEffect(()=>{
-        console.log("Time Array" + timeArray)
-        console.log("Date Array" + dateArray)
         fillGrid();
     },[timeArray,dateArray])
 
@@ -209,15 +196,12 @@ export default function Grid({participants}) {
                                     <div className="grid__cell">{cell}</div>
                                 )
                             })
-
                             }
                         </div>
                     )
                 }
-                ):("")
-                    
+                ):("")  
                 }
-
             </div>
         </div>
     </div>

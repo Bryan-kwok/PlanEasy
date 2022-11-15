@@ -1,10 +1,8 @@
 import Calendar from "react-calendar";
 import 'react-calendar/dist/Calendar.css';
 import "./Calendar.scss"
-import { useState } from "react";
 
 export default function Calender({date,setDate}) {
-
   return (
     <div className="calendar__container">
         <h1 className="calendar__title">Select which days you think you'll be avaliable</h1>

@@ -25,8 +25,6 @@ export default function Participants({participant}) {
                     <div>To: {handleTime(date.to)}</div>
                 </div>
             )
-            
-            
         })}
     </div>
   )

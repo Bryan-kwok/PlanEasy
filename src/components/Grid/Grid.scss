@@ -21,9 +21,9 @@
             display: flex;
         }
         &--cell{
-            min-height: 60px;
-            min-width: 90px;
-            border: 1px black solid;
+            min-height: 3.75rem;
+            min-width: 5.625rem;
+            border: .0625rem black solid;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -34,9 +34,9 @@
     &__date{
         &--cell{
             font-size: 0.8rem;
-            min-height: 60px;
-            min-width: 90px;
-            border: 1px black solid;
+            min-height: 3.75rem;
+            min-width: 5.625rem;
+            border: .0625rem black solid;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -51,9 +51,9 @@
     }
     &__cell{
         font-size: 0.8rem;
-        min-height: 60px;
-        min-width: 90px;
-        border: 1px black solid;
+        min-height: 3.75rem;
+        min-width: 5.625rem;
+        border: .0625rem black solid;
         display: flex;
         justify-content: center;
         align-items: center;
