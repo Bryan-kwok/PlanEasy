@@ -1,14 +1,18 @@
 {
   "files": {
-    "main.css": "/PlanEasy/static/css/main.db5c9635.css",
-    "main.js": "/PlanEasy/static/js/main.5e8c1bca.js",
+    "main.css": "/PlanEasy/static/css/main.cd04f001.css",
+    "main.js": "/PlanEasy/static/js/main.b2579833.js",
     "static/media/cookoff.jpg": "/PlanEasy/static/media/cookoff.e41f5dbc8bc1fcb31c72.jpg",
+    "static/media/Instruction2.PNG": "/PlanEasy/static/media/Instruction2.a9727ee5dcc6adb0a7ba.PNG",
+    "static/media/Instruction3.PNG": "/PlanEasy/static/media/Instruction3.1760ccd07e062a32d9c1.PNG",
+    "static/media/Instruction1.PNG": "/PlanEasy/static/media/Instruction1.0b951a0e13e21b8b5a5c.PNG",
+    "static/media/Instruction4.PNG": "/PlanEasy/static/media/Instruction4.167fbcebce887d2a490f.PNG",
     "index.html": "/PlanEasy/index.html",
-    "main.db5c9635.css.map": "/PlanEasy/static/css/main.db5c9635.css.map",
-    "main.5e8c1bca.js.map": "/PlanEasy/static/js/main.5e8c1bca.js.map"
+    "main.cd04f001.css.map": "/PlanEasy/static/css/main.cd04f001.css.map",
+    "main.b2579833.js.map": "/PlanEasy/static/js/main.b2579833.js.map"
   },
   "entrypoints": [
-    "static/css/main.db5c9635.css",
-    "static/js/main.5e8c1bca.js"
+    "static/css/main.cd04f001.css",
+    "static/js/main.b2579833.js"
   ]
 }
