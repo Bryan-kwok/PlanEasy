@@ -22,19 +22,32 @@ export default function Grid({participants}) {
                 }
             }
         }
-        setMaxTime(max)
+        if(max===maxTime){
+            setMaxTime([max][0])
+        }else{
+            setMaxTime(max)
+        }
+        
     }
 
     const findMinTime = ()=>{
-        let min = "24"
-        for(let i=0; i<Object.values(participants).length;i++){
-            for(let y=0;y<Object.values(participants[i]).length-1;y++){
-                if(Number(participants[i][y].from)<Number(min)){
-                    min = participants[i][y].from
+        if(participants.length>0){
+            let min = "24"
+            for(let i=0; i<Object.values(participants).length;i++){
+                for(let y=0;y<Object.values(participants[i]).length-1;y++){
+                    if(Number(participants[i][y].from)<Number(min)){
+                        min = participants[i][y].from
+                    }
                 }
             }
+            if(min===minTime){
+                setMinTime([min][0])
+            }else{
+                setMinTime(min)
+            }
+            
         }
-        setMinTime(min)
+        
     }
 
     const standardTimeConversion=(time)=>{
@@ -50,12 +63,15 @@ export default function Grid({participants}) {
     }
 
     const handleTimeArray = ()=>{
-        let arr =[]; 
-        for(let i =Number(minTime); i<=Number(maxTime); i++){
-            arr.push(standardTimeConversion(i))
+        if(participants.length>0){
+            let arr =[]; 
+            for(let i =Number(minTime); i<=Number(maxTime); i++){
+                arr.push(standardTimeConversion(i))
+            }
+            arr.unshift("")
+            setTimeArray(arr)
         }
-        arr.unshift("")
-        setTimeArray(arr)
+        
     }
 
     //functions that find the maximum date, minimum date and populate all dates in between
@@ -125,7 +141,7 @@ export default function Grid({participants}) {
 
     const fillGrid=()=>{
 
-        if(timeArray.length>0&&dateArray.length>0){
+        if(dateArray.length>0){
             let grids =[];
             for(let i=0;i<dateArray.length;i++){
                 grids.push(new Array(timeArray.length-1).fill(""))
@@ -135,14 +151,14 @@ export default function Grid({participants}) {
                 for(let y=0;y<Object.values(participants[i]).length-1;y++){
                     let day = participants[i][y].day.split(" ")[0] +" "+ participants[i][y].day.split(" ")[1]
                     let index = dateArray.findIndex((date)=>date===day)
-                    if(index||index===0){
+                    if(index!=-1){
                         for(let j=Number(participants[i][y].from)-Number(minTime);j<=Number(participants[i][y].to)-Number(minTime);j++ ){
                             grids[index][j] = grids[index][j]+participants[i].name+", "
                         }
                     }
                 }
             }
-            setGrid([...grids])
+            setGrid(grids)
         }
         
     }
@@ -162,11 +178,11 @@ export default function Grid({participants}) {
     useEffect(()=>{
         handleTimeArray();
         handleDateArray();
-    },[maxTime,minTime,maxDate,minDate,participants])
+    },[maxTime,minTime,maxDate,minDate])
 
     useEffect(()=>{
         fillGrid();
-    },[timeArray,dateArray])
+    },[timeArray,dateArray,participants])
 
   return (
     <div className="grid__container">

@@ -1,5 +1,5 @@
 import "./App.scss"
-import { BrowserRouter, Routes, Route} from "react-router-dom";
+import { BrowserRouter, Routes, Route,Navigate} from "react-router-dom";
 import { useState } from "react";
 import Header from "./components/Header/Header";
 import LandingPage from "./pages/LandingPage/LandingPage";
@@ -22,6 +22,7 @@ function App() {
         <div className="Page">
           <Routes>
               <Route path="/" exact element={<LandingPage/>} />
+              <Route path="/PlanEasy" element={<Navigate to="/" />} />
               <Route path="/create" element={<CreatePage 
               date={date} 
               setDate={setDate}
