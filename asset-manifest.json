@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/PlanEasy/static/css/main.ed31eeb4.css",
-    "main.js": "/PlanEasy/static/js/main.f6f5e987.js",
+    "main.css": "/PlanEasy/static/css/main.db5c9635.css",
+    "main.js": "/PlanEasy/static/js/main.5e8c1bca.js",
     "static/media/cookoff.jpg": "/PlanEasy/static/media/cookoff.e41f5dbc8bc1fcb31c72.jpg",
     "index.html": "/PlanEasy/index.html",
-    "main.ed31eeb4.css.map": "/PlanEasy/static/css/main.ed31eeb4.css.map",
-    "main.f6f5e987.js.map": "/PlanEasy/static/js/main.f6f5e987.js.map"
+    "main.db5c9635.css.map": "/PlanEasy/static/css/main.db5c9635.css.map",
+    "main.5e8c1bca.js.map": "/PlanEasy/static/js/main.5e8c1bca.js.map"
   },
   "entrypoints": [
-    "static/css/main.ed31eeb4.css",
-    "static/js/main.f6f5e987.js"
+    "static/css/main.db5c9635.css",
+    "static/js/main.5e8c1bca.js"
   ]
 }
