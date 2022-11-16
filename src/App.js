@@ -12,7 +12,7 @@ function App() {
   let [eventName, setEventName] = useState("Frank's Cookoff");
   let [organizerName, setOrganizerName] = useState("Frank Ocean");
   let [locationName, setLocationName] = useState("Trinity Bellwoods Park");
-  let [locationAddress, setLocationAddress] = useState("rinity Bellwoods Park (790 Queen St W)");
+  let [locationAddress, setLocationAddress] = useState("Trinity Bellwoods Park (790 Queen St W)");
 
   
   return (

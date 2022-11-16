@@ -29,7 +29,7 @@ export default function LandingPage() {
             <div className="landing__instructions--image3"></div>
           </div>
           <div className="landing__instructions--4">
-            <h2 className="landing__instructions--copy">4. The Abailability section visualizes which date and time most participants can come on.</h2>
+            <h2 className="landing__instructions--copy">4. The Availability section visualizes which date and time most participants can come on.</h2>
             <div className="landing__instructions--image4"></div>
           </div>
         </section>
