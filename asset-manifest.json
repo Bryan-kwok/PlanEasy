@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/PlanEasy/static/css/main.cd04f001.css",
-    "main.js": "/PlanEasy/static/js/main.b2579833.js",
+    "main.js": "/PlanEasy/static/js/main.1056ce05.js",
     "static/media/cookoff.jpg": "/PlanEasy/static/media/cookoff.e41f5dbc8bc1fcb31c72.jpg",
     "static/media/Instruction2.PNG": "/PlanEasy/static/media/Instruction2.a9727ee5dcc6adb0a7ba.PNG",
     "static/media/Instruction3.PNG": "/PlanEasy/static/media/Instruction3.1760ccd07e062a32d9c1.PNG",
@@ -9,10 +9,10 @@
     "static/media/Instruction4.PNG": "/PlanEasy/static/media/Instruction4.167fbcebce887d2a490f.PNG",
     "index.html": "/PlanEasy/index.html",
     "main.cd04f001.css.map": "/PlanEasy/static/css/main.cd04f001.css.map",
-    "main.b2579833.js.map": "/PlanEasy/static/js/main.b2579833.js.map"
+    "main.1056ce05.js.map": "/PlanEasy/static/js/main.1056ce05.js.map"
   },
   "entrypoints": [
     "static/css/main.cd04f001.css",
-    "static/js/main.b2579833.js"
+    "static/js/main.1056ce05.js"
   ]
 }
