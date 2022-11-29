@@ -94,7 +94,7 @@ export default function EventPage({date,eventName,organizerName,locationName,loc
                     ):(
                         <div></div>
                     )}
-                    <button className="eventpage__form--button">+</button>
+                    <button className="eventpage__form--button" disabled={!name||""}>+ Add Person</button>
                 </form>
             </div>
             <div className="eventpage__participant--group">
