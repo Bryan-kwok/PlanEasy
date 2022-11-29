@@ -10,7 +10,7 @@ export default function LandingPage() {
               <h2 className="landing__copy">You and your friends can never seem to decide on a date and time?</h2>
               <h2 className="landing__copy">Worry not, PlanEasy has you covered.</h2>
           </section>
-          <Link to="/create">
+          <Link to="/PlanEasy/create">
             <button className="landing__button">Create a new plan!</button>
           </Link>
         </section>

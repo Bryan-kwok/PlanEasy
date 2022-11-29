@@ -21,9 +21,9 @@ function App() {
         <Header/>
         <div className="Page">
           <Routes>
-              <Route path="/" exact element={<LandingPage/>} />
-              <Route path="/PlanEasy" element={<Navigate to="/" />} />
-              <Route path="/create" element={<CreatePage 
+              <Route path="/PlanEasy" element={<LandingPage/>} />
+              <Route path="/" exact element={<Navigate to="/PlanEasy" />} />
+              <Route path="/PlanEasy/create" element={<CreatePage 
               date={date} 
               setDate={setDate}
               eventName={eventName}
@@ -35,7 +35,7 @@ function App() {
               locationAddress={locationAddress}
               setLocationAddress={setLocationAddress}  
               />} />
-              <Route path="/event" element={<EventPage 
+              <Route path="/PlanEasy/event" element={<EventPage 
               date={date}
               eventName={eventName}
               organizerName={organizerName}
